@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html>
-<head>
-   <title></title>
-   <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-   <h1>Un super titre</h1>
-</body>
+<html lang="fr">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link rel="stylesheet" href="sass/style.css">
+      <title>OhMyFood</title>
+   </head>
+
+   <body>
+
+      <header class="center">
+         <a href="#">
+            <h1class="logosize"><img src="logo/ohmyfood.png" alt="oh my food logo"></h1>
+        </a>
+      </header>
+      
+      <div class="background-medium center">
+         <p class="location"><span class="mapsymbol"><i class="fa-solid fa-location-dot"></span></i>Paris, Belleville</p>
+      </div>
+      
+      <div class="background-light presentation">
+         <h2 class="center">Réservez le menu qui vous convient</h2> 
+            <p class="center">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+         <nav class="center">
+            <a class="btn" href="#">Explorer nos restaurants</a> <!--faire button et anim -->
+         </nav>
+      </div>
+   
+
+      <main>
+         <section>
+               <h2>Fonctionnement</h2> <!--ajouter les icones 1-2-3-->
+                  <article>
+                        <h3 class="steps"><span class="insideicons"><i class="fa-solid fa-mobile-screen-button"></i></span>Choisissez un restaurant</h3>
+                  </article>
+                  <article>
+                        <h3 class="steps"><span class="insideicons"><i class="fa-solid fa-list"></i></span>Composez votre menu</h3>
+                  </article>
+                  <article>
+                        <h3 class="steps"><span class="insideicons insideiconsviolet"><i class="fa-solid fa-store"></i></span>Dégustez au restaurant</h3>
+                  </article>
+         </section>
+
+         <section class="background-light">
+            <h2>Restaurants</h2>
+               
+               <a href="menu1.html"></a>
+                  <article>
+                     <h3>La palette du goût</h3>
+                  </article>
+                  <article>
+                     <h3>La note enchantée</h3>
+                  </article>
+                  <article>
+                     <h3>À la française</h3>
+                  </article>
+                  <article>
+                     <h3>Le délice des sens</h3>
+                  </article>
+               
+         </section>
+      </main>
+
+      <footer class="background-dark">
+         <h3><img src="logo/ohmyfood.png" alt="oh my food logo"></h3> <!--changer la taille et la couleur-->
+         <a href="#"><p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p></a>
+         <a href="#"><p><i class="fa-regular fa-handshake"></i> Devenir partenaire</p></a> <!--changer la direction à diagonale-->
+         <a href="#"><p>Mentions légales</p></a>
+         <a href="#"><p>Contact</p></a>
+      </footer>
+
+   </body>
+
 </html>

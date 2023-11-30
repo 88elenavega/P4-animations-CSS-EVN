@@ -1,0 +1,125 @@
+/****** General ***********/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+$background_1: #F6F6F6; /*gris claire*/
+$background_2: #EAEAEA; /*gris moyen*/
+$background_3: #353535; /*gris foncé*/
+
+.background-light {
+    background-color: $background_1;
+}
+  
+.background-medium {
+    background-color: $background_2;
+}
+
+.background-dark {
+    background-color: $background_3;
+}
+
+
+
+/****** header***********/ 
+.logosize {
+    width: 375px;
+    height: 63px;
+    /*taille sur Figma = correcte??? */
+}
+
+@mixin centerdisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    @include centerdisplay;
+}
+
+/****** nav***********/
+
+.location {
+    color: $background_3;
+}
+
+.mapsymbol {
+    padding: 15px
+}
+
+
+.presentation {
+    padding: 40px;
+}
+/*taille des textes*/
+
+.btn {
+    padding: 15px 20px;
+	background-color: white;
+
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 25px;
+    border-color: #d9d9d9;
+	box-sizing: border-box;
+
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 17px;
+
+
+    position: relative;
+    transition: transform 400ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+
+/*FIGMA*/
+// On click
+// Scroll to: "Restaurants";
+// Animate: Instant; animation-duration: 0ms;
+
+
+
+
+
+
+
+
+
+/****** main ***********/
+
+main {
+    margin: 10px;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    height: 72.38px;
+    width: 335px; 
+    /*width pas 100%?/
+    
+    /*padding-top sur figma entre 505px et 700px??*/
+    padding-left: 20px;
+    border-radius: 20px;
+    background-color: $background_2;
+
+    /*comment faire border-style un peu ombré?*/
+
+    .insideicons {
+        padding: 15px;
+        color: #353535;
+    }
+        .insideiconsviolet {
+            color: #9747FF;
+        }
+}
+
+
