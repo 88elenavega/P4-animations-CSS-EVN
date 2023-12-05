@@ -20,7 +20,7 @@
 
       <header class="center">
          <a href="#">
-            <h1 class="logosize"><img src="logo/ohmyfood.png" alt="oh my food logo"></h1>
+            <img class="logosize" src="logo/ohmyfood.png" alt="oh my food logo">
         </a>
       </header>
       
@@ -32,13 +32,13 @@
          <h2 class="center">Réservez le menu qui vous convient</h2> 
             <p class="center">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
          <nav class="center">
-            <a class="btn" href="#">Explorer nos restaurants</a> <!--faire button et anim -->
+            <a class="btn">Explorer nos restaurants</a> <!--faire button et anim -->
          </nav>
       </div>
    
 
       <main>
-         <section>
+         <section class="howto">
                <h2>Fonctionnement</h2> <!--ajouter les icones 1-2-3-->
                   <article>
                         <h3 class="steps"><span class="insideicons"><i class="fa-solid fa-mobile-screen-button"></i></span>Choisissez un restaurant</h3>
@@ -51,32 +51,58 @@
                   </article>
          </section>
 
-         <section class="background-light">
-            <h2>Restaurants</h2>
-               
-               <a href="menu1.html"></a>
-                  <article>
-                     <h3>La palette du goût</h3>
+         <section class="background-light restaurant">
+            <h2 class="restaurantpresentation">Restaurants</h2>
+
+               <a href="menu1.html">
+                  <article class="card">
+                     <img src="restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image de une table de restaurant avec un plat">
+                        <div class="cardtext">
+                           <h3 class="cardtexttitle">La palette du goût</h3>
+                           <p>Ménilmontant</p>
+                        </div>
                   </article>
-                  <article>
-                     <h3>La note enchantée</h3>
+               </a>
+            
+               <a href="menu1.html">
+                  <article class="card">
+                     <img src="restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image de une table de restaurant avec un plat">
+                        <div class="cardtext">
+                           <h3 class="cardtexttitle">La note enchantée</h3>
+                           <p>Charonne</p>
+                        </div>
                   </article>
-                  <article>
-                     <h3>À la française</h3>
+               </a>
+
+               <a href="menu1.html">
+                  <article class="card">
+                     <img src="restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image de une table de restaurant avec un plat">
+                        <div class="cardtext">
+                           <h3 class="cardtexttitle">À la française</h3>
+                           <p>Cité Rouge</p>
+                        </div>
                   </article>
-                  <article>
-                     <h3>Le délice des sens</h3>
+               </a>
+
+               <a href="menu1.html">
+                  <article class="card">
+                     <img src="restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image de une table de restaurant avec un plat">
+                        <div class="cardtext">
+                           <h3 class="cardtexttitle">Le délice des sens</h3>
+                           <p>Folie-Méricourt</p>
+                        </div>
                   </article>
-               
+               </a>
+
          </section>
       </main>
 
       <footer class="background-dark">
-         <h3><img src="logo/ohmyfood.png" alt="oh my food logo"></h3> <!--changer la taille et la couleur-->
-         <a href="#"><p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p></a>
-         <a href="#"><p><i class="fa-regular fa-handshake"></i> Devenir partenaire</p></a> <!--changer la direction à diagonale-->
-         <a href="#"><p>Mentions légales</p></a>
-         <a href="#"><p>Contact</p></a>
+         <img class="logo" src="logo/ohmyfood.png" alt="oh my food logo"> <!--changer la taille et la couleur-->
+         <p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p>
+         <p><i class="fa-regular fa-handshake"></i> Devenir partenaire</p><!--changer la direction à diagonale-->
+         <p>Mentions légales</p>
+         <p>Contact</p>
       </footer>
 
    </body>

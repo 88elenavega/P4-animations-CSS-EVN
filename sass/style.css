@@ -4,11 +4,16 @@
   font-family: "Roboto", sans-serif;
 }
 
-/*gris claire*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*gris claire - rose juste pour l'instant pour mieux voir*/
 /*gris moyen*/
 /*gris foncé*/
 .background-light {
-  background-color: #F6F6F6;
+  background-color: pink;
 }
 
 .background-medium {
@@ -21,15 +26,17 @@
 
 /****** header***********/
 .logosize {
-  width: 375px;
-  height: 63px;
-  /*taille sur Figma = correcte??? */
+  width: 197px;
+  height: 36px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 /****** nav***********/
@@ -45,7 +52,7 @@
   padding: 40px;
 }
 
-/*taille des textes*/
+/*changer taille des textes*/
 .btn {
   padding: 15px 20px;
   background-color: white;
@@ -67,27 +74,67 @@
 
 /*FIGMA*/
 /****** main ***********/
-main {
+.howto {
   margin: 10px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .steps {
   display: flex;
   align-items: center;
   height: 72.38px;
-  width: 335px;
-  /*width pas 100%?/
-
-  /*padding-top sur figma entre 505px et 700px??*/
+  width: 95%;
   padding-left: 20px;
   border-radius: 20px;
   background-color: #EAEAEA;
-  /*comment faire border-style un peu ombré?*/
+  /* faire border-style un peu ombré?*/
 }
 .steps .insideicons {
   padding: 15px;
   color: #353535;
 }
-.steps .insideiconsviolet {
+.stepsviolet {
   color: #9747FF;
+}
+
+/****** restaurants ***********/
+.restaurant {
+  padding-bottom: 20px;
+}
+.restaurantpresentation {
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 25px;
+  margin: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cardtext {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px 25px 0 0;
+  /*revisiter les tailles des photos*/
+}
+
+footer {
+  padding: 25px;
+  color: white;
+}
+footer .logo {
+  color: white; /*ne marche pas*/
+  Width: 137.58px;
+  Height: 27px;
 }/*# sourceMappingURL=style.css.map */
