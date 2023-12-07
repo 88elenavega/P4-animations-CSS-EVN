@@ -133,10 +133,9 @@ $background_3: #353535; /*gris foncé*/
 
 .restaurant {
     padding-bottom: 20px;
-    &presentation {
+    &title {
         padding-top: 50px;
         padding-left: 30px;
-        padding-bottom: 20px;
     }
 }
 
@@ -155,10 +154,9 @@ $background_3: #353535; /*gris foncé*/
 
 .card img {
         width: 100%;
-        height: 270px;
+        height: 200px;
         object-fit: cover;
         border-radius: 25px 25px 0 0;
-        /*revisiter les tailles des photos*/
 }
 
 
@@ -167,9 +165,12 @@ footer {
     padding: 25px;
     color: white;
     .logo {
-        color: white; /*ne marche pas*/
-        Width: 137.58px;
-        Height: 27px;
+        width: 137.58px;
+        height: 27px;
+        
+        /*comment inverser la couleur??*/
+        color: white;
+        filter: invert(100%); 
     }
 }
 

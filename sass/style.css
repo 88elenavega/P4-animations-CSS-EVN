@@ -102,10 +102,9 @@ a {
 .restaurant {
   padding-bottom: 20px;
 }
-.restaurantpresentation {
+.restauranttitle {
   padding-top: 50px;
   padding-left: 30px;
-  padding-bottom: 20px;
 }
 
 .card {
@@ -122,11 +121,10 @@ a {
 
 .card img {
   width: 100%;
-  height: 270px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px 25px 0 0;
-  /*revisiter les tailles des photos*/
 }
 
 footer {
@@ -134,7 +132,9 @@ footer {
   color: white;
 }
 footer .logo {
-  color: white; /*ne marche pas*/
-  Width: 137.58px;
-  Height: 27px;
+  width: 137.58px;
+  height: 27px;
+  /*comment inverser la couleur??*/
+  color: white;
+  filter: invert(100%);
 }/*# sourceMappingURL=style.css.map */
