@@ -95,7 +95,7 @@ $background_3: #353535; /*gris foncé*/
 
 
 
-/****** main ***********/
+/****** main - fonctionnement***********/
 
 .howto {
     margin: 20px;
@@ -111,13 +111,11 @@ $background_3: #353535; /*gris foncé*/
     padding-left: 20px;
     border-radius: 20px;
     background-color: $background_2;
-
     /* faire border-style un peu ombré?*/
 
     .insideicons {
         padding: 15px;
         color: #353535;
-    
         &violet {
             color: #9747FF;
         }
@@ -125,10 +123,8 @@ $background_3: #353535; /*gris foncé*/
 }
 
 
-/*contiuer à modif ça + ajouter les numéros sur index*/
 .number {
-    display: flex;
-    align-items: center;
+    @include centerdisplay;
     margin-left: 20px;
     
     &circle {
@@ -143,7 +139,7 @@ $background_3: #353535; /*gris foncé*/
         align-content: center;
 
         position: absolute;
-        left: 20px;
+        left: 25px;
     }
 }
 
@@ -152,7 +148,7 @@ $background_3: #353535; /*gris foncé*/
 
 
 
-/****** restaurants ***********/
+/****** main - restaurants ***********/
 
 .restaurant {
     padding-bottom: 20px;
@@ -180,7 +176,44 @@ $background_3: #353535; /*gris foncé*/
         height: 200px;
         object-fit: cover;
         border-radius: 25px 25px 0 0;
+        
 }
+
+.new {
+    color: #008766;
+    background-color: #99E2D0;
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+
+    position: absolute;
+    right: 50px;
+}
+
+
+
+.like {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    &heart {
+        width: 22px;
+        height: 21px;
+        border: 1px;
+        &animation:active {
+            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+        }
+    }
+}
+
+
+
 
 
 
