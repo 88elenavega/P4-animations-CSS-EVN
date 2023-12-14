@@ -14,7 +14,7 @@ body {
 }
 
 
-$background_1: pink; /*gris claire - rose juste pour l'instant pour mieux voir*/
+$background_1: #F3F3F3; /*gris claire*/
 $background_2: #EAEAEA; /*gris moyen*/
 $background_3: #353535; /*gris foncé*/
 
@@ -51,6 +51,8 @@ $background_3: #353535; /*gris foncé*/
     @include centerdisplay;
 }
 
+
+
 /****** nav***********/
 
 .location {
@@ -61,11 +63,9 @@ $background_3: #353535; /*gris foncé*/
     padding: 15px
 }
 
-
 .presentation {
     padding: 40px;
 }
-
 
 .btn {
     padding: 15px 20px;
@@ -81,7 +81,7 @@ $background_3: #353535; /*gris foncé*/
 	font-size: 16px;
 	line-height: 17px;
 
-    position: relative;
+    position: relative; /*pourquoi?*/
     transition: 400ms;
     &:hover {
         opacity: 0.7;
@@ -179,7 +179,7 @@ $background_3: #353535; /*gris foncé*/
         
 }
 
-.new {
+.newlabel {
     color: #008766;
     background-color: #99E2D0;
     width: 80px;
@@ -207,11 +207,13 @@ $background_3: #353535; /*gris foncé*/
         width: 22px;
         height: 21px;
         border: 1px;
+        /*ne marche pas*/ 
         &animation:active {
-            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-            animation-name: example;
-            animation-duration: 0.5s;
-            animation-fill-mode: both;
+            /*background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);*/
+            
+            -webkit-linear-gradient: (#FF79DA, #9356DC);
+            -webkit-text-fill-color: blueviolet;
+
         }
     }
 }
@@ -237,8 +239,8 @@ footer {
 /******MEDIA QUERIES********/
 
 
-/*comment ajouter le max 1440? */
-@media (min-width: 767.98px) {
+/*comment ajouter le max 1440? - "and (max-width: 1440px)" ??*/
+@media (min-width: 768px) {
 
 .logosize {
     width: 200px;
@@ -255,11 +257,25 @@ footer {
     padding-bottom: 20px;
 }
 
-.stepsflex {
-    display: flex;
+
+
+.steps {
+    /*comment faire qui prendrent toute la longueur ??*/
+    /*width 100% ?? ne marche pas*/
+
+    &flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 
+
+.numbercircle {
+    position: relative;
+    margin-right: 10px; /*c'est une bonne opt ou pas ??*/
+}
 
 
 .restaurantgrid {
@@ -274,8 +290,10 @@ footer {
     flex-wrap: wrap-reverse;
     justify-content: flex-end;
     gap: 25px;
-
+    /*comment mettre le logo tout à droite en bas ?*/
 }
+
+
 
 
 }
