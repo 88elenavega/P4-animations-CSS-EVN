@@ -16,7 +16,7 @@ body {
 
 $background_1: #F3F3F3; /*gris claire*/
 $background_2: #EAEAEA; /*gris moyen*/
-$background_3: #353535; /*gris foncé*/
+$background_3: #5a5858; /*gris foncé*/
 
 .background-light {
     background-color: $background_1;
@@ -260,21 +260,22 @@ header {
 
 .displayflexheader {
     display: flex;
-    justify-content: center;
-}
-
-
-.displayflexheader img {
-    display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    
+    & img {
+        align-self: center; 
+        /*comment faire pour remettre le logo au centre ??*/
+    }
 }
 
 
 .arrowstyle {
     color: #353535;
     font-size: 30px;
-    margin-left: 30px;
-    /*comment faire ??*/
+    padding: 30px;
+    display:flex;
+    justify-content: center;
+    
 }
 
 /****** main - menus ***********/
@@ -307,13 +308,12 @@ header {
     text-align: left;
     margin-left: 25px;
     &underline {
-        color: #99E2D0;
         width: 40px;
         top: 27px;
         border: 3px;
-        border-style: solid;
+        border-bottom: #99E2D0;
+        border-style: none none solid;
         margin-left: 25px;
-        /*comment ?????*/ 
     }
 }
 
@@ -341,6 +341,7 @@ header {
 
 
 footer {
+    /*il faut remettre la direction bien*/
     padding: 25px;
     color: white;
     .logo {

@@ -25,7 +25,7 @@ body {
 }
 
 .background-dark {
-  background-color: #353535;
+  background-color: #5a5858;
 }
 .background-dark div {
   display: flex;
@@ -54,7 +54,7 @@ header {
 
 /****** nav***********/
 .location {
-  color: #353535;
+  color: #5a5858;
 }
 
 .mapsymbol {
@@ -211,19 +211,19 @@ header {
 /****** header - menus ***********/
 .displayflexheader {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
-
 .displayflexheader img {
-  display: flex;
-  justify-content: center;
+  align-self: center;
+  /*comment faire pour remettre le logo au centre ??*/
 }
 
 .arrowstyle {
   color: #353535;
   font-size: 30px;
-  margin-left: 30px;
-  /*comment faire ??*/
+  padding: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 /****** main - menus ***********/
@@ -255,13 +255,12 @@ header {
   margin-left: 25px;
 }
 .dishtypeunderline {
-  color: #99E2D0;
   width: 40px;
   top: 27px;
   border: 3px;
-  border-style: solid;
+  border-bottom: #99E2D0;
+  border-style: none none solid;
   margin-left: 25px;
-  /*comment ?????*/
 }
 
 .menu {
@@ -282,6 +281,7 @@ header {
 }
 
 footer {
+  /*il faut remettre la direction bien*/
   padding: 25px;
   color: white;
 }
