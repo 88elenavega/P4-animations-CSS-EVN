@@ -340,7 +340,15 @@ header {
     display: flex;
     justify-content: space-between;
     margin-right: 20px;
+    &animation:hover {
+        /*first try avec les animations*/
+        transition: margin-left ease-in-out;
+        transition-duration: 2s;;
+        background-color: #99E2D0;
+
+    }
 }
+
 
 
 footer {
