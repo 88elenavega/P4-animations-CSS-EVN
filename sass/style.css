@@ -133,7 +133,11 @@ header {
 
 /****** main - restaurants ***********/
 .restaurant {
-  padding-bottom: 20px;
+  margin: 20px auto;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  max-width: 1055px;
+  width: 100%;
 }
 .restauranttitle {
   padding-top: 50px;
@@ -265,6 +269,7 @@ header {
 
 .menu {
   max-width: 1055px;
+  width: 100%;
   background-color: #EAEAEA;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -281,9 +286,11 @@ header {
 }
 
 footer {
-  /*il faut remettre la direction bien*/
   padding: 25px;
   color: white;
+  display: flex;
+  flex-direction: column; /*????*/
+  /*je n'arrive pas a remmetre la bonne direction pour la V mobile*/
 }
 footer .logo {
   width: 137.58px;
@@ -323,9 +330,21 @@ footer .logo {
     font-size: 14px;
     position: absolute;
   }
-  .logoend {
+  .photoprincipalmenu {
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 380px;
+  }
+  .menu {
+    margin-left: auto;
+    margin-right: auto;
+    /*est-ce que c'est une bonne option?*/
+    /*comment faire le width un peu plus long?*/
+  }
+  footer {
     display: flex;
-    flex-wrap: row-reverse;
+    flex-direction: row-reverse;
+    align-items: center;
     gap: 25px;
   }
 }/*# sourceMappingURL=style.css.map */

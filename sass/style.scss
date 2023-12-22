@@ -120,6 +120,7 @@ header {
     align-items: center;
     height: 72.38px;
     width: 100%;
+    
     padding-left: 20px;
     border-radius: 20px;
     background-color: $background_2;
@@ -163,7 +164,11 @@ header {
 /****** main - restaurants ***********/
 
 .restaurant {
-    padding-bottom: 20px;
+    margin: 20px auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    max-width: 1055px;
+    width: 100%;
     &title {
         padding-top: 50px;
         padding-left: 30px;
@@ -320,6 +325,7 @@ header {
 
 .menu {
     max-width: 1055px;
+    width: 100%;
     background-color: $background_2;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -337,19 +343,20 @@ header {
 }
 
 
-
-
-
 footer {
-    /*il faut remettre la direction bien*/
     padding: 25px;
     color: white;
+    display: flex;
+    flex-direction: column; /*????*/
+    /*je n'arrive pas a remmetre la bonne direction pour la V mobile*/
     .logo {
         width: 137.58px;
         height: 27px;
-        filter: invert(100%); 
+        filter: invert(100%);
     }
 }
+
+
 
 
 
@@ -386,16 +393,10 @@ footer {
 }
 
 
-
-
-
-
 .restaurantgrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
- 
-    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 }
 
 .newlabel {
@@ -408,12 +409,27 @@ footer {
     
 }
 
-.logoend {
-    display: flex;
-    flex-wrap: row-reverse;
-    gap: 25px;
+
+.photoprincipalmenu {
+    object-fit: contain;
+    height: 380px;
+}
+
+.menu {
+    margin-left: auto; 
+    margin-right: auto; 
+    /*est-ce que c'est une bonne option?*/
+    /*comment faire le width un peu plus long?*/
 }
 
 
+
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 25px;
+}
 
 }
