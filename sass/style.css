@@ -4,6 +4,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -29,6 +39,7 @@ body {
 }
 .background-dark div {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -55,6 +66,9 @@ header {
 /****** nav***********/
 .location {
   color: #5a5858;
+  height: 40px;
+  padding-top: 15px;
+  font-weight: bold;
 }
 
 .mapsymbol {
@@ -63,6 +77,14 @@ header {
 
 .presentation {
   padding: 40px;
+}
+
+.presentationtext1 {
+  padding-bottom: 20px;
+}
+
+.presentationtext2 {
+  padding-bottom: 20px;
 }
 
 .btn {
@@ -85,10 +107,14 @@ header {
 /****** main - fonctionnement***********/
 .howto {
   margin: 20px auto;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding: 70px 20px;
+  box-sizing: border-box;
   max-width: 1055px;
   width: 100%;
+}
+
+.instructions {
+  margin-bottom: 20px;
 }
 
 .steps {
@@ -96,10 +122,11 @@ header {
   align-items: center;
   height: 72.38px;
   width: 100%;
+  background-color: #F3F3F3;
   padding-left: 20px;
+  margin: 10px 0;
   border-radius: 20px;
-  background-color: #EAEAEA;
-  /* faire border-style un peu ombré?*/
+  box-shadow: 5px 2px 2px #EAEAEA;
 }
 .steps .insideicons {
   padding: 15px;
@@ -133,7 +160,7 @@ header {
 
 /****** main - restaurants ***********/
 .restaurant {
-  margin: 20px auto;
+  margin: auto;
   padding-top: 70px;
   padding-bottom: 30px;
   max-width: 1055px;
@@ -153,7 +180,11 @@ header {
 }
 .cardtext {
   padding-left: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+.cardtexttitle {
+  padding-top: 15px;
+  margin-bottom: 10px;
 }
 
 .card img {
@@ -176,12 +207,14 @@ header {
   font-size: 14px;
   position: absolute;
   right: 50px;
+  top: 20px;
 }
 
 .like {
   display: flex;
   justify-content: space-between;
-  margin-right: 20px;
+  margin-right: 50px;
+  padding-bottom: 10px;
 }
 .like .fa-solid {
   opacity: 0;
@@ -196,6 +229,8 @@ header {
 .like > div i.fa-solid {
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 22px;
 }
 .like > div:hover .fa-solid {
   opacity: 1;
@@ -219,7 +254,6 @@ header {
 }
 .displayflexheader img {
   align-self: center;
-  /*comment faire pour remettre le logo au centre ??*/
 }
 
 .arrowstyle {
@@ -242,11 +276,17 @@ header {
   font-family: Shrikhand;
   font-size: 28px;
   font-style: italic;
-  font-weight: bolder;
+  font-weight: 400;
   line-height: 41px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   margin-left: 30px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+.restaurantnameflex {
+  display: flex;
+  justify-content: center;
 }
 
 .dishtype {
@@ -256,11 +296,9 @@ header {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: 25px;
 }
 .dishtypeunderline {
   width: 40px;
-  top: 27px;
   border: 3px;
   border-bottom: #99E2D0;
   border-style: none none solid;
@@ -278,30 +316,68 @@ header {
   margin-top: -50px;
   position: relative;
 }
-
-.price {
+.menu section {
+  max-width: 635px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.menu-item {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
 }
-.priceanimation:hover {
-  /*first try avec les animations*/
-  transition: margin-left ease-in-out;
-  transition-duration: 2s;
+.menu-item h3,
+.menu-item p {
+  margin: 0;
+}
+.menu-item-left {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.menu-item-left h3 {
+  font-weight: 500;
+}
+.menu-item-price {
+  align-self: flex-end;
+  padding: 15px;
+  transition: 0.5s;
+}
+.menu-item-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #99E2D0;
+  width: 59px;
+  height: 69px;
+  position: absolute;
+  right: -59px;
+  color: white;
+  transition: 0.5s;
+}
+.menu-item:hover .menu-item-check {
+  right: 0;
+}
+.menu-item:hover .menu-item-price {
+  margin-right: 59px;
 }
 
 footer {
   padding: 25px;
   color: white;
   display: flex;
-  flex-direction: column; /*????*/
-  /*je n'arrive pas a remmetre la bonne direction pour la V mobile*/
+  flex-direction: column;
 }
 footer .logo {
   width: 137.58px;
   height: 27px;
   filter: invert(100%);
+  padding-bottom: 20px;
 }
 
 /************* MEDIA QUERIES ***************/
@@ -313,16 +389,20 @@ footer .logo {
   }
   .presentationtext1 {
     font-size: 40px;
+    padding-bottom: 35px;
   }
   .presentationtext2 {
     font-size: 18px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
   }
   .stepsflex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+  }
+  .restaurant {
+    width: 100%;
   }
   .restaurantgrid {
     display: grid;
@@ -331,26 +411,28 @@ footer .logo {
   }
   .newlabel {
     display: flex;
-    justify-content: right;
-    align-items: top;
     font-size: 14px;
     position: absolute;
+    top: 20px;
   }
-  .photoprincipalmenu {
-    -o-object-fit: contain;
-       object-fit: contain;
-    height: 380px;
+  .photoprincipalmenu img {
+    height: 383px;
+  }
+  .restaurantname {
+    align-content: baseline;
+    /*ne marche pas*/
   }
   .menu {
     margin-left: auto;
     margin-right: auto;
-    /*est-ce que c'est une bonne option?*/
-    /*comment faire le width un peu plus long?*/
   }
   footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 25px;
+  }
+  .background-dark div {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
