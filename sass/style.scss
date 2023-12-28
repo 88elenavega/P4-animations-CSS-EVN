@@ -195,7 +195,6 @@ header {
     margin: auto;
     padding-top: 70px;
     padding-bottom: 30px;
-    max-width: 1055px;
     width: 100%;
     &title {
         padding-top: 50px;
@@ -494,15 +493,19 @@ footer {
         
     }
 
-    .restaurant {
+    .restauranttitle {
         width: 100%;
+        max-width: 1055px;
+        margin: auto;
+        padding-left: 50px;
     }
 
     .restaurantgrid {
         display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 1055px;
+        margin: auto;
     }
 
     .newlabel {
@@ -519,11 +522,6 @@ footer {
     }
 
 
-    .restaurantname {
-        align-content: baseline;
-        /*ne marche pas*/
-
-    }
 
     .menu {
         margin-left: auto; 
