@@ -35,7 +35,7 @@ body {
 }
 
 .background-dark {
-  background-color: #5a5858;
+  background-color: #353535;
 }
 .background-dark div {
   display: flex;
@@ -65,7 +65,7 @@ header {
 
 /****** nav***********/
 .location {
-  color: #5a5858;
+  color: #353535;
   height: 40px;
   padding-top: 15px;
   font-weight: bold;
@@ -108,9 +108,11 @@ header {
 .howto {
   margin: 20px auto;
   padding: 70px 20px;
-  box-sizing: border-box;
   max-width: 1055px;
   width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
 }
 
 .instructions {
@@ -342,6 +344,9 @@ header {
   display: flex;
   flex-direction: column;
   padding: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-item-left h3 {
   font-weight: 500;
@@ -368,6 +373,10 @@ header {
 }
 .menu-item:hover .menu-item-price {
   margin-right: 59px;
+}
+
+.btnmenu {
+  margin-top: 50px;
 }
 
 footer {

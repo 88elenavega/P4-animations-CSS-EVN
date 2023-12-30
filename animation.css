@@ -1,23 +1,7 @@
 
-
-p {
-    font-family: Shrikhand, sans-serif;
-    font-size: 35px;
-    font-style: italic;
-    font-weight: 400;
-    
-    display: flex; 
-    justify-content: center;
-    
-    padding-top: 10px; 
-    
-}
-
-
-
 .loader {
+
     border: 10px solid #EAEAEA;
-    
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -31,8 +15,34 @@ p {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     
-    
 }
+
+
+.loader-p {
+    font-family: Shrikhand, sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 5px; 
+}
+
+
+.full-page {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    z-index: 1;
+    opacity: 1;
+    animation: full-page 0.5s linear both;
+
+}
+
+
 
 
 @keyframes charging {
@@ -58,6 +68,21 @@ p {
 
 
 
+@keyframes full-page {
+    90% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    100% {
+        z-index: -1;
+    }
+}
+
 
 
 
@@ -67,16 +92,15 @@ p {
 @media (min-width: 768px) {
 
 
-    p {
-        font-size: 75px;
-        padding-top: 35px;
-    }
-
-
     .loader {
         width: 350px;
         height: 350px;
     }
 
+    .loader-p {
+        font-size: 85px;
+        padding-bottom: 10px;
+       
+    }
 
 }

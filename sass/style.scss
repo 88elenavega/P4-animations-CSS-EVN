@@ -27,7 +27,8 @@ body {
 
 $background_1: #F3F3F3; /*gris claire*/
 $background_2: #EAEAEA; /*gris moyen*/
-$background_3: #5a5858; /*gris foncé*/
+$background_3: #353535; /*gris foncé*/
+ 
 
 .background-light {
     background-color: $background_1;
@@ -134,9 +135,10 @@ header {
 .howto {
     margin: 20px auto;
     padding: 70px 20px;
-    box-sizing: border-box;
     max-width: 1055px;
     width: 100%;
+    height: 
+    background-color: white;
 }
 
 .instructions {
@@ -405,6 +407,9 @@ header {
             display: flex;
             flex-direction: column;
             padding: 15px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
 
             h3 {
                 font-weight: 500;
@@ -443,7 +448,9 @@ header {
 }
 
 
-
+.btnmenu {
+    margin-top: 50px;
+}
 
 
 
@@ -490,11 +497,10 @@ footer {
 
 
     .stepsflex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 30px;
-        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
     }
 
     .restauranttitle {
@@ -522,7 +528,6 @@ footer {
 
     .photoprincipalmenu img {
         height: 383px;
-       
     }
 
 
@@ -532,7 +537,7 @@ footer {
         margin-right: auto; 
     }
 
-
+    
 
 
     footer {
