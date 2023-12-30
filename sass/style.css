@@ -67,7 +67,7 @@ header {
 .location {
   color: #353535;
   height: 40px;
-  padding-top: 15px;
+  padding-top: 10px;
   font-weight: bold;
 }
 
@@ -106,17 +106,16 @@ header {
 
 /****** main - fonctionnement***********/
 .howto {
-  margin: 20px auto;
-  padding: 70px 20px;
+  margin: 0 auto;
+  padding: 70px 20px 40px 20px;
   max-width: 1055px;
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 85%;
   background-color: white;
 }
 
 .instructions {
   margin-bottom: 20px;
+  margin-left: auto;
 }
 
 .steps {
@@ -163,7 +162,7 @@ header {
 /****** main - restaurants ***********/
 .restaurant {
   margin: auto;
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
 }
@@ -386,10 +385,10 @@ footer {
   flex-direction: column;
 }
 footer .logo {
-  width: 137.58px;
+  width: 139px;
   height: 27px;
   filter: invert(100%);
-  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /************* MEDIA QUERIES ***************/
@@ -406,6 +405,10 @@ footer .logo {
   .presentationtext2 {
     font-size: 18px;
     padding-bottom: 35px;
+  }
+  .howto {
+    max-width: 1000px;
+    /*ça c'est une bonne idée ou pas-comment faire sinon*/
   }
   .stepsflex {
     display: flex;
@@ -444,6 +447,11 @@ footer .logo {
     flex-direction: row-reverse;
     align-items: center;
     gap: 25px;
+    padding-top: 60px;
+  }
+  footer .logo {
+    padding-left: 50px;
+    padding-top: 25px;
   }
   .background-dark div {
     flex-direction: row;
