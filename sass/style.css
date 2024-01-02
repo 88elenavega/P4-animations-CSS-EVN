@@ -16,7 +16,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 body {
@@ -388,7 +388,7 @@ footer .logo {
   width: 139px;
   height: 27px;
   filter: invert(100%);
-  margin-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 /************* MEDIA QUERIES ***************/
@@ -446,12 +446,12 @@ footer .logo {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 25px;
-    padding-top: 60px;
+    gap: 15px;
+    padding-top: 40px;
   }
   footer .logo {
     padding-left: 50px;
-    padding-top: 25px;
+    padding-top: 30px;
   }
   .background-dark div {
     flex-direction: row;
