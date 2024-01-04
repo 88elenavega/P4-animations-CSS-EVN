@@ -118,6 +118,8 @@ header {
 	line-height: 17px;
 
     transition: 400ms;
+    cursor: pointer;
+
     &:hover {
         opacity: 0.7;
     }
@@ -263,6 +265,7 @@ header {
 
     &>div {
         position: relative;
+        height: 25px;
 
         i {
             transition: 0.5s;
@@ -341,11 +344,12 @@ header {
     letter-spacing: 0em;
     text-align: center;
     margin-left: 30px;
-    margin-bottom: 20px;
+    
     padding-right: 20px;
     &flex {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 }
 

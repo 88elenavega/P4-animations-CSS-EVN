@@ -99,6 +99,7 @@ header {
   font-size: 16px;
   line-height: 17px;
   transition: 400ms;
+  cursor: pointer;
 }
 .btn:hover {
   opacity: 0.7;
@@ -222,6 +223,7 @@ header {
 }
 .like > div {
   position: relative;
+  height: 25px;
 }
 .like > div i {
   transition: 0.5s;
@@ -284,12 +286,12 @@ header {
   letter-spacing: 0em;
   text-align: center;
   margin-left: 30px;
-  margin-bottom: 20px;
   padding-right: 20px;
 }
 .restaurantnameflex {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .dishtype {
