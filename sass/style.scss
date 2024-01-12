@@ -414,8 +414,8 @@ header {
         overflow: hidden;
         margin-top: 20px;
 
-        animation-name: dishes;
-        animation-duration: 1s;
+        animation: dishes 1s both;
+        opacity: 0;
 
         &.plats {
             animation-name: dishes;
@@ -485,10 +485,12 @@ header {
 
     0% {
         transform: translate(0, 50px);
+        opacity: 0;
     }
 
     100% {
         transform: translate(0,0);
+        opacity: 1;
     }
 
 }

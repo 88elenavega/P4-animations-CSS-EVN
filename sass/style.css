@@ -339,8 +339,8 @@ header {
   position: relative;
   overflow: hidden;
   margin-top: 20px;
-  animation-name: dishes;
-  animation-duration: 1s;
+  animation: dishes 1s both;
+  opacity: 0;
 }
 .menu-item.plats {
   animation-name: dishes;
@@ -395,9 +395,11 @@ header {
 @keyframes dishes {
   0% {
     transform: translate(0, 50px);
+    opacity: 0;
   }
   100% {
     transform: translate(0, 0);
+    opacity: 1;
   }
 }
 .btnmenu {
