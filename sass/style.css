@@ -103,6 +103,7 @@ header {
   cursor: pointer;
 }
 .btn:hover {
+  transform: scale 0, 5;
   opacity: 0.7;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078); /*drop shadow*/
 }
@@ -338,6 +339,8 @@ header {
   position: relative;
   overflow: hidden;
   margin-top: 20px;
+  animation-name: dishes;
+  animation-duration: 1s;
 }
 .menu-item h3,
 .menu-item p {
@@ -378,6 +381,14 @@ header {
   margin-right: 59px;
 }
 
+@keyframes dishes {
+  0% {
+    transform: translate(0, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .btnmenu {
   margin-top: 50px;
 }
