@@ -342,6 +342,14 @@ header {
   animation-name: dishes;
   animation-duration: 1s;
 }
+.menu-item.plats {
+  animation-name: dishes;
+  animation-delay: 0.5s;
+}
+.menu-item.desserts {
+  animation-name: dishes;
+  animation-delay: 1s;
+}
 .menu-item h3,
 .menu-item p {
   margin: 0;
@@ -382,16 +390,6 @@ header {
 }
 .menu-item:hover .menu-item-price {
   margin-right: 59px;
-}
-
-.plats {
-  animation-name: dishes;
-  animation-delay: 0.5s;
-}
-
-.desserts {
-  animation-name: dishes;
-  animation-delay: 1s;
 }
 
 @keyframes dishes {

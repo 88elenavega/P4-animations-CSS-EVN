@@ -416,7 +416,16 @@ header {
 
         animation-name: dishes;
         animation-duration: 1s;
+
+        &.plats {
+            animation-name: dishes;
+            animation-delay: 0.5s;
+        }
         
+        &.desserts {
+            animation-name: dishes;
+            animation-delay: 1s;
+        }
 
         h3,
         p {
@@ -471,15 +480,6 @@ header {
     }
 }
 
-.plats {
-    animation-name: dishes;
-    animation-delay: 0.5s;
-}
-
-.desserts {
-    animation-name: dishes;
-    animation-delay: 1s;
-}
 
 @keyframes dishes {
 
