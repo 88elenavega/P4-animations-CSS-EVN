@@ -345,6 +345,9 @@ header {
 .menu-item h3,
 .menu-item p {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-item-left {
   display: flex;
@@ -379,6 +382,16 @@ header {
 }
 .menu-item:hover .menu-item-price {
   margin-right: 59px;
+}
+
+.plats {
+  animation-name: dishes;
+  animation-delay: 0.5s;
+}
+
+.desserts {
+  animation-name: dishes;
+  animation-delay: 1s;
 }
 
 @keyframes dishes {
@@ -435,6 +448,7 @@ footer .logo {
     max-width: 1055px;
     margin: auto;
     padding-left: 50px;
+    box-sizing: border-box;
   }
   .restaurantgrid {
     display: grid;
